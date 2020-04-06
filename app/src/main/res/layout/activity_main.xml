@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffefb5"
+    android:layout_height="match_parent"
+    tools:context="com.example.rk.calcounter.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title_text"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/apple"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apple"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/row_bg"
+        >
+
+        <EditText
+            android:id="@+id/foodEditText"
+            android:textStyle="italic"
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apple"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/hint_food"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_calories"
+            android:id="@+id/calorieEditText"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_text"
+            android:layout_below="@+id/calorieEditText"
+            android:layout_marginTop="18dp"
+            android:id="@+id/submitB"
+
+
+            />
+
+        <Button
+            android:id="@+id/myCaloriesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Calories" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

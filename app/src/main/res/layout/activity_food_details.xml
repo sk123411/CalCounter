@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rk.calcounter.FoodDetailsActivity"
+    android:background="@color/colorAccent"
+    >
+
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="150dp"
+        android:layout_height= "150dp"
+        android:src="@drawable/apple"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="detsName"
+            android:textSize="15dp"
+            android:id="@+id/foodiddets"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            />
+        <Button
+
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:drawable/ic_delete"
+            android:layout_gravity="right"
+            android:layout_marginRight="17dp"
+
+
+
+
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie"
+            android:layout_gravity="center"
+            android:textSize="19dp"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:id="@+id/caltext"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="120"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="55sp"
+            android:id="@+id/calreal"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+        <TextView
+            android:id="@+id/detsDateText"
+            android:text="Consumed on.."
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="Share"
+            android:background="@drawable/circle"
+            android:layout_gravity="right"
+            android:id="@+id/shareB"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
